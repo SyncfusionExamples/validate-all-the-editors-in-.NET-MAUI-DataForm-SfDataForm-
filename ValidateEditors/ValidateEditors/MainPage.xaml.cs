@@ -1,9 +1,11 @@
-﻿namespace ValidateEditors;
-
-public partial class MainPage : ContentPage
+﻿namespace ValidateEditors
 {
-	public MainPage()
-	{
-		InitializeComponent();
-	}
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+        }
+    }
+
 }

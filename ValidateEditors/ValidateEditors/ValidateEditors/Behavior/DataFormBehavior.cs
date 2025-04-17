@@ -4,9 +4,9 @@ namespace ValidateEditors
 {
     public class DataFormBehavior : Behavior<ContentPage>
     {
-        private SfDataForm dataForm;
+        private SfDataForm? dataForm;
 
-        private Button validateButton;
+        private Button? validateButton;
         protected override void OnAttachedTo(ContentPage bindable)
         {
             base.OnAttachedTo(bindable);
@@ -24,10 +24,14 @@ namespace ValidateEditors
                 this.validateButton.Clicked += OnValidateClicked;
             }
         }
-        private void OnValidateClicked(object sender, EventArgs e)
+        private void OnValidateClicked(object? sender, EventArgs e)
         {
-            dataForm.Validate();
+            if (dataForm != null)
+            {
+                dataForm.Validate();
+            }
         }
+
         protected override void OnDetachingFrom(ContentPage bindable)
         {
             base.OnDetachingFrom(bindable);

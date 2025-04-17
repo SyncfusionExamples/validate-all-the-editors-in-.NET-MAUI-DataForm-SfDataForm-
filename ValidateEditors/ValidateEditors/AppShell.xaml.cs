@@ -1,9 +1,10 @@
-﻿namespace ValidateEditors;
-
-public partial class AppShell : Shell
+﻿namespace ValidateEditors
 {
-	public AppShell()
-	{
-		InitializeComponent();
-	}
+    public partial class AppShell : Shell
+    {
+        public AppShell()
+        {
+            InitializeComponent();
+        }
+    }
 }

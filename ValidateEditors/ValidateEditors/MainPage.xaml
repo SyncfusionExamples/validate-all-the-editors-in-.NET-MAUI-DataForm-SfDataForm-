@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ValidateEditors"
              xmlns:dataForm="clr-namespace:Syncfusion.Maui.DataForm;assembly=Syncfusion.Maui.DataForm"
+             x:DataType="local:DataFormViewModel"
              x:Class="ValidateEditors.MainPage">
     <Grid RowDefinitions="0.9*, 0.1*" IsClippedToBounds="True">
         <Grid.BindingContext>
