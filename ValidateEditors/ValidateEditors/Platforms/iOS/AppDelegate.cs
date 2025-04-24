@@ -1,9 +1,10 @@
 ﻿using Foundation;
 
-namespace ValidateEditors;
-
-[Register("AppDelegate")]
-public class AppDelegate : MauiUIApplicationDelegate
+namespace ValidateEditors
 {
-	protected override MauiApp CreateMauiApp() => MauiProgram.CreateMauiApp();
+    [Register("AppDelegate")]
+    public class AppDelegate : MauiUIApplicationDelegate
+    {
+        protected override MauiApp CreateMauiApp() => MauiProgram.CreateMauiApp();
+    }
 }
